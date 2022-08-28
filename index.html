@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TIC TAC TOE</title>
+        <link href="index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1> Tic Tac Toe</h1>
+        <button id="restartButton">Restart?</button>
+        <h1> </h1>
+        <div id="board">
+            <div data-index="1" class="spot right-border bottom-border"></div>
+            <div data-index="2" class="spot right-border bottom-border"></div>
+            <div data-index="3" class="spot bottom-border"></div>
+            <div data-index="4" class="spot right-border bottom-border"></div>
+            <div data-index="5" class="spot right-border bottom-border"></div>
+            <div data-index="6" class="spot bottom-border"></div>
+            <div data-index="7" class="spot right-border"></div>
+            <div data-index="8" class="spot right-border"></div>
+            <div data-index="9" class="spot"></div>
+            <div id="strike" class="strike "> </div>
+        </div>
+        <div id="end-display" class="hidden">
+            <h2 id="winner-text">Winner is X</h2>
+            <button id="play-again">Play Again?</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

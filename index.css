@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    color: navy;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.spot{
+    color: currentColor;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-border{
+    border-right: 0.2em solid darkblue;
+}
+
+.bottom-border{
+    border-bottom: 0.2em solid darkblue;
+}
+
+.strike{
+    position: absolute;
+    background-color: red;
+}
+
+.strike-r1{
+    width: 100%;
+    height: 4px;
+    top: 15%;
+}
+
+.strike-r2{
+    width: 100%;
+    height: 4px;
+    top: 48%;
+}
+
+.strike-r3{
+    width: 100%;
+    height: 4px;
+    top: 83%;
+}
+
+.strike-c1{
+    width: 4px;
+    height: 100%;
+    left: 15%;
+}
+
+.strike-c2{
+    width: 4px;
+    height: 100%;
+    left: 48%;
+}
+
+.strike-c3{
+    width: 4px;
+    height: 100%;
+    left: 83%;
+}
+
+.strike-d1{
+    width: 90%;
+    height: 4px;
+    top: 48%;
+    left: 5%;
+    transform: skewY(45deg);
+}
+
+.strike-d2{
+    width: 90%;
+    height: 4px;
+    top: 48%;
+    left: 5%;
+    transform: skewY(-45deg);
+}
+
+h1{
+    color: currentColor
+}
+
+#end-display{
+    text-align: center;
+    border: darkblue 7px solid;
+    padding: 50px;
+    width: 25%;
+    margin-top: 50px;
+}
+
+h2{
+    color: currentColor;
+    font-size: 2.5em;
+    margin-top: 0px;
+}
+
+button{
+    background-color: lightcyan;
+    color: currentColor;
+    border: currentColor 5px double;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: medium;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.x-hover:hover::after{
+    content: "X";
+    opacity: 0.5;
+    color: cyan;
+}
+
+.o-hover:hover::after{
+    content:"O";
+    opacity: 0.5;
+    color: violet;
+}
